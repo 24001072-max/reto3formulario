@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de la persona usuaria</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="contenedor">
+    <h1>Registro de la persona usuaria</h1>
+    <form action="#" method="post">
+      
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="contraseña">Contraseña:</label>
+      <input type="password" id="contraseña" name="contraseña" required>
+
+      <label for="descripcion">Descripción personal:</label>
+      <textarea id="descripcion" name="descripcion" rows="4" placeholder="Escribe algo sobre ti..."></textarea>
+
+      <fieldset>
+        <legend>Intereses</legend>
+        <label><input type="checkbox" name="intereses" value="tecnologia"> Tecnología</label>
+        <label><input type="checkbox" name="intereses" value="arte"> Arte</label>
+        <label><input type="checkbox" name="intereses" value="deporte"> Deporte</label>
+        <label><input type="checkbox" name="intereses" value="musica"> Música</label>
+      </fieldset>
+
+      <button type="submit">Registrarse</button>
+    </form>
+  </div>
+</body>
+</html>
